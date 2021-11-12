@@ -1,9 +1,13 @@
 #include <stdio.h>
 
 int main(void){
-  int binary = 0;
-  int calc = 1;
-  int decimal = 24;
+  int decimal;
+  printf("10進数を入力してください\n");
+  scanf("%d", &decimal);
+
+  int binary, calc;
+  binary = 0;
+  calc = 1;
 
   while (decimal > 0){
     binary = binary + (decimal % 2) * calc;
